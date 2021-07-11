@@ -10,6 +10,8 @@ aux_source_directory(sample SRC_SAMPLE)
 
 include_directories(include)
 
+link_directories(/usr/local/lib)
+
 add_library(lslogger SHARED ${SRC})
 
 add_executable(testcase ${SRC} ${SRC_SAMPLE})
