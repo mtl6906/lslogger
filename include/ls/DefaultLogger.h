@@ -5,7 +5,7 @@
 #include "mutex"
 #include "cstdlib"
 
-#define LOGGER(type) if(getenv("ENABLE_LOGGER"))logger(type, __FILE__, __LINE__)
+#define LOGGER(type) if(type == ls::ERROR || getenv("ENABLE_LOGGER"))logger(type, __FILE__, __LINE__)
 
 namespace ls
 {
