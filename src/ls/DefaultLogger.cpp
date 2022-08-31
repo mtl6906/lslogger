@@ -26,6 +26,11 @@ namespace ls
 		printf("%lf", message);
 	}
 
+	void DefaultLogger::log(long long message)
+	{
+		printf("%lld", message);
+	}
+
 	void DefaultLogger::lock()
 	{
 		logMutex.lock();

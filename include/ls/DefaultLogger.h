@@ -17,6 +17,7 @@ namespace ls
 			void log(const char *message) override;
 			void log(int message) override;
 			void log(double message) override;
+			void log(long long message) override;
 			std::string logTime() override;
 			void lock() override;
 			void unlock() override;

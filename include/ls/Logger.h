@@ -31,6 +31,7 @@ namespace ls
 			virtual void log(const std::string &val) = 0;
 			virtual void log(const char *val) = 0;
 			virtual void log(double val) = 0;
+			virtual void log(long long val) = 0;
 	};
 	Logger& endl(Logger &logger);
 }
